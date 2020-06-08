@@ -15,16 +15,19 @@ const routes = [
 	{
 		path: '/about',
 		component: AboutLayout,
+		name: 'AboutLayout',
 		redirect: '/about',
 		children: [
 			{
 				path: '/about',
 				component: About,
+				name: 'About',
 			},
 			{
 				path: '/about/description',
 				// which is lazy-loaded when the route is visited.
 				component: () => import(/* webpackChunkName: "about" */ '../views/Description.vue'),
+				name: 'Description',
 			},
 		],
 	},
@@ -32,7 +35,7 @@ const routes = [
 
 const router = new VueRouter({
 	mode: 'history',
-	base: process.env.BASE_URL,
+	base: process.env.BASE_URL || 'https://brave-lewin-125e77.netlify.app',
 	routes,
 });
 
