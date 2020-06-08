@@ -34,8 +34,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-	mode: 'history',
-	base: process.env.BASE_URL || 'https://brave-lewin-125e77.netlify.app',
+	// mode: 'history',
+	base: process.env.BASE_URL,
 	routes,
 });
 

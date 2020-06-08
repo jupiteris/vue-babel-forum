@@ -24,7 +24,7 @@ export default {
     handleMoveReader(id) {
       // route to the About page
       if (id === "about") {
-        window.location.href = "/about";
+        window.location.href = "#/about";
       }
       // navigate to the BBU custom reader page by id
       else {

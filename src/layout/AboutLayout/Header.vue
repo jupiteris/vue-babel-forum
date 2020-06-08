@@ -17,7 +17,7 @@ export default {
   name: "Header",
   methods: {
     handleMoveAbout() {
-      window.location.href = "/about";
+      window.location.href = "#/about";
     }
   }
 };
