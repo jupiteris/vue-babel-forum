@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import AboutLayout from '@/layout/AboutLayout/index.vue';
+import About from '@/views/About.vue';
 
 Vue.use(VueRouter);
 
@@ -18,7 +19,7 @@ const routes = [
 		children: [
 			{
 				path: '/about',
-				component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+				component: About,
 			},
 			{
 				path: '/about/description',
@@ -30,7 +31,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-	mode: 'hash',
+	mode: 'history',
 	base: process.env.BASE_URL,
 	routes,
 });
