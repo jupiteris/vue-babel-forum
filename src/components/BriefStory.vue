@@ -62,7 +62,7 @@ export default {
 .briefDiv {
 	padding: 20px;
 }
-.briefDiv:hover {
+.card-body:hover {
 	cursor: pointer;
 }
 .card {
@@ -70,6 +70,7 @@ export default {
 	overflow: hidden;
 	height: 200px;
 	max-width: unset;
+	background: #fdfdfd;
 }
 .card-body {
 	padding: 0px;
@@ -77,6 +78,7 @@ export default {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
+	background: #fdfdfd;
 }
 .card-title {
 	font-size: 20px;
