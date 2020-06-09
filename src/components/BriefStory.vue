@@ -105,7 +105,7 @@ export default {
 }
 @media (max-width: 540px) {
 	#about {
-		height: 80px;
+		height: 140px;
 	}
 	#about .card-title {
 		white-space: nowrap;
