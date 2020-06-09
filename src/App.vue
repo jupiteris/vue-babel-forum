@@ -33,7 +33,7 @@ export default {
 				let updatedRaw = e.raw;
 				updatedRaw = updatedRaw.replace(/!\[.*\(.*\)/g, '');
 				updatedRaw = updatedRaw.replace(/\[.*\]/g, '');
-				updatedRaw = updatedRaw.replace(/\@.*/g, '');
+				// updatedRaw = updatedRaw.replace(/\@.*/g, '');
 				updatedRaw = updatedRaw.replace(/!FORK/g, '');
 				return { ...e, raw: updatedRaw };
 			});
