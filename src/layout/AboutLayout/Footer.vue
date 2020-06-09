@@ -8,7 +8,7 @@
         <img src="@/assets/Blivande Logo.png" />
       </a>
       <a href="https://www.konstnarsnamnden.se/kulturbryggan" style="width:70%">
-        <img src="@/assets/Kulturbryggan.png" />
+        <img src="@/assets/Kulturbryggan.png" id="third-img" />
       </a>
     </div>
   </div>
@@ -25,7 +25,7 @@ export default {
   margin-top: 100px;
   position: relative;
   width: 100%;
-  height: 11vh;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,14 +36,29 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 80%;
 }
 .footer a {
-  margin-left: 10px;
   height: 100%;
+  float: left;
+  margin-left: 10px;
 }
 .footer a img {
+  max-width: 64px;
   height: 100%;
-  width: 100%;
+}
+#third-img {
+  max-width: 372px;
+}
+
+@media (max-width: 540px) {
+  .footer {
+    height: 32px !important;
+  }
+  .footer a img {
+    width: 32px !important;
+  }
+  .footer a:nth-child(3) img {
+    width: 174px !important;
+  }
 }
 </style>
