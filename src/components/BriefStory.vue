@@ -67,7 +67,6 @@ export default {
 }
 .card {
 	border: 0px;
-	overflow: hidden;
 	height: 208px;
 	max-width: unset;
 	background: #fdfdfd;
@@ -86,7 +85,7 @@ export default {
 }
 .textDiv {
 	margin-bottom: 5px;
-	height: 70%;
+	overflow: hidden;
 }
 .card-text {
 	font-size: 14px;
