@@ -68,7 +68,7 @@ export default {
 .card {
 	border: 0px;
 	overflow: hidden;
-	height: 200px;
+	height: 208px;
 	max-width: unset;
 	background: #fdfdfd;
 }
