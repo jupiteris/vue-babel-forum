@@ -8,7 +8,7 @@
       @click="handleMoveReader(story.id)"
     >
       <div class="textDiv">
-        <b-card-text>{{story.excerpt}}</b-card-text>
+        <b-card-text>{{story.raw}}</b-card-text>
       </div>
     </b-card>
   </b-col>
@@ -66,6 +66,7 @@ export default {
 }
 .card-text {
   font-size: 14px;
+  white-space: pre-line;
 }
 #about .card-title {
   font-size: 26px;
